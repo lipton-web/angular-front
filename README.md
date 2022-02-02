@@ -1,3 +1,9 @@
+index.html의 <app-root>는  
+`app.component.ts`  
+`app.component.html`
+`app.component.scss(css)`  
+파일이 하나로 뭉쳐진 레고 조각 이다. 
+
 # AngularFront
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.0.
