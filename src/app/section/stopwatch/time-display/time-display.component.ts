@@ -27,6 +27,7 @@ export class TimeDisplayComponent implements OnInit {
   }
 
   timeStart() {
+    this.timeStop(); // 두 번 누르면 두번 실행 되서
     this.timeInterval = setInterval(() => {
       this.ms++;
     }, 10)
