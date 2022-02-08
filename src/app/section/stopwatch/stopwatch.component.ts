@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { PageToggleService } from 'src/app/share/page-toggle.service';
 
 @Component({
   selector: 'app-stopwatch',
@@ -14,11 +15,13 @@ export class StopwatchComponent implements OnInit {
   commandText!: string
 
   constructor(
-    private router: Router
+    private router: Router,
+    private pageToggleService: PageToggleService
   ) { }
 
   goClock() {
-    this.router.navigateByUrl("/clock")
+    // this.router.navigateByUrl("/clock")
+    this.pageToggleService.goPage("/clock")
   }
 
   startTime($event: any) {
